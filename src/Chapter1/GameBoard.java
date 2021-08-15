@@ -16,7 +16,7 @@ public class GameBoard extends JPanel {
         //this.setBackground(Color.pink);
         this.setOpaque(false);
         this.setBorder(BorderFactory.createLineBorder(Color.black));
-
+//
     }
 
 
