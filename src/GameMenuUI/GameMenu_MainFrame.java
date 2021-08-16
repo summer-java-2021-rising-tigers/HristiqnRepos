@@ -1,6 +1,8 @@
 package GameMenuUI;
 
 import Chapter1.GameBoard;
+import Utility.Utility;
+import jdk.jshell.execution.Util;
 
 import javax.swing.*;
 
@@ -15,7 +17,7 @@ public class GameMenu_MainFrame{
 
         GameMenuFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         GameMenuFrame.setTitle("Chapter one");
-        GameMenuFrame.setSize(1920, 1080);
+        GameMenuFrame.setSize(Utility.getScreenWidth(), Utility.getScreenHeight());
         GameMenuFrame.setLayout(null);
         GameMenuFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
        // GameMenuFrame.setUndecorated(true);

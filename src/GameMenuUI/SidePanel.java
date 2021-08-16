@@ -1,5 +1,7 @@
 package GameMenuUI;
 
+import Utility.Utility;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;
@@ -13,7 +15,8 @@ public class SidePanel {
         JPanel sidePanel = new JPanel();
 
         sidePanel.setBackground(Color.gray);
-        sidePanel.setBounds(1570, 0, 370, 1080);
+        sidePanel.setBounds(Utility.getScreenWidth()-370, 0, 370, Utility.getScreenHeight());
+       // sidePanel.setBounds(1570, 0, 370, 1080);
         sidePanel.setLayout(null);
 
         return sidePanel;
@@ -36,7 +39,7 @@ public class SidePanel {
         heroLabel.setText("Hero Name");
         heroLabel.setHorizontalTextPosition(JLabel.CENTER);
         heroLabel.setVerticalTextPosition(JLabel.BOTTOM);
-        heroLabel.setBounds(1820,10,90,120);
+        heroLabel.setBounds(Utility.getScreenWidth()-100,10,90,120);
 
         heroLabel.setIcon(icon);
 
@@ -50,7 +53,7 @@ public class SidePanel {
         JProgressBar heroHealth = new JProgressBar(0,100);  //Min/Max Health
 
         heroHealth.setValue(100);
-        heroHealth.setBounds(1580,15,230,25);
+        heroHealth.setBounds(Utility.getScreenWidth()-340,15,230,25);
         heroHealth.setStringPainted(true);
         heroHealth.setForeground(Color.red);
         heroHealth.setBackground(Color.black);
@@ -64,7 +67,7 @@ public class SidePanel {
     private static JProgressBar heroResources(){
         JProgressBar heroResources = new JProgressBar(0,100);
         heroResources.setValue(100);
-        heroResources.setBounds(1580,55,230,25);
+        heroResources.setBounds(Utility.getScreenWidth()-340,55,230,25);
         heroResources.setStringPainted(true);
         heroResources.setForeground(Color.blue);
         heroResources.setBackground(Color.black);
@@ -88,7 +91,7 @@ public class SidePanel {
         enemyLabel.setVerticalTextPosition(JLabel.BOTTOM);
 
         enemyLabel.setIcon(icon);
-        enemyLabel.setBounds(1820,210,90,120);
+        enemyLabel.setBounds(Utility.getScreenWidth()-100,210,90,120);
 
         return enemyLabel;
     }
@@ -100,7 +103,7 @@ public class SidePanel {
         JProgressBar enemyHealth = new JProgressBar(0,100);  //Min/Max Health
 
         enemyHealth.setValue(100);
-        enemyHealth.setBounds(1580,215,230,25);
+        enemyHealth.setBounds(Utility.getScreenWidth()-340,215,230,25);
         enemyHealth.setStringPainted(true);
         enemyHealth.setForeground(Color.red);
         enemyHealth.setBackground(Color.black);
@@ -114,7 +117,7 @@ public class SidePanel {
     private static JProgressBar enemyResources(){
         JProgressBar enemyResources = new JProgressBar(0,100);
         enemyResources.setValue(100);
-        enemyResources.setBounds(1580,255,230,25);
+        enemyResources.setBounds(Utility.getScreenWidth()-340,255,230,25);
         enemyResources.setStringPainted(true);
         enemyResources.setForeground(Color.blue);
         enemyResources.setBackground(Color.black);
@@ -138,7 +141,7 @@ public class SidePanel {
         emptyLabel.setHorizontalTextPosition(JLabel.CENTER);
         emptyLabel.setVerticalTextPosition(JLabel.BOTTOM);
 
-        emptyLabel.setBounds(1620,710,200,110);
+        emptyLabel.setBounds(Utility.getScreenWidth()-300,710,200,110);
 
         return emptyLabel;
     }

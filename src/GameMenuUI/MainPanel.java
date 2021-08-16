@@ -1,5 +1,7 @@
 package GameMenuUI;
 
+import Utility.Utility;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.Objects;
@@ -11,7 +13,7 @@ public class MainPanel extends JPanel{
     MainPanel(){
 
         this.setBackground(Color.pink);
-        this.setBounds(0,0,1570,1080);
+        this.setBounds(0,0, Utility.getScreenWidth()-350,Utility.getScreenHeight());
         this.setLayout(null);
 
 
