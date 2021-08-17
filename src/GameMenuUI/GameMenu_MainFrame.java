@@ -27,19 +27,22 @@ public class GameMenu_MainFrame{
 
 
 
-
-        GameBoard GameBoardTile = new GameBoard();
-        GameMenuFrame.add(GameBoardTile);
+//      1st try for game tile
+//        GameBoard GameBoardTile = new GameBoard();
+//        GameMenuFrame.add(GameBoardTile);
 
 
 
 
        // GameMenuFrame.add(MainPanel.getBackgroundLabel());
        // GameMenuFrame.add(MainPanel.getMainPanel());
+
+
         MainPanel mainPanel = new MainPanel();
         GameMenuFrame.add(mainPanel);
 
-
+        BackGround background = new BackGround();
+        GameMenuFrame.add(background);
 
 
     //hero health overlaps side panel. I dont know how to do this better

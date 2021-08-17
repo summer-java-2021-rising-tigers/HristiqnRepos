@@ -22,22 +22,25 @@
 //}
 package GameBoardObjects;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import GameMenuUI.SidePanel;
 
-public class Tile extends GameObject{
+import javax.swing.*;
+import java.awt.*;
+import java.util.Objects;
+
+public class Hero extends GameObject{
 
     protected int height;
     protected int width;
 
-    public Tile(int row, int col) {
+    public Hero(int row, int col) {
 
         super(row, col);
         this.height = 10;
         this.width = 10;
 
     }
-
+    Image icon = new ImageIcon(Objects.requireNonNull(SidePanel.class.getResource("character.png"))).getImage();
     public void render(Graphics g) {
         int tileWidth   = 1570/31;
         int tileHeight  = 1080/21;
@@ -45,7 +48,12 @@ public class Tile extends GameObject{
         int tileX = this.col * tileWidth;
         int tileY = this.row * tileHeight;
 
-        g.setColor(Color.darkGray);
+
+
+//        g.setColor(Color.black);
+//        g.fillRect(tileX, tileY, tileWidth, tileHeight);
+        g.drawImage(icon, tileX, tileY, tileWidth, tileHeight, null);
+        g.setColor(Color.black);
         g.drawRect(tileX, tileY, tileWidth, tileHeight);
 
     }
@@ -57,3 +65,4 @@ public class Tile extends GameObject{
         return this.width;
     }
 }
+
