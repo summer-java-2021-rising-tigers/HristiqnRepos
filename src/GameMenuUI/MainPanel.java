@@ -1,6 +1,6 @@
 package GameMenuUI;
 
-import Utility.Utility;
+import Utility.ScreenResolution;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +13,7 @@ public class MainPanel extends JPanel{
     MainPanel(){
 
         this.setBackground(Color.pink);
-        this.setBounds(0,0, Utility.getScreenWidth()-350,Utility.getScreenHeight());
+        this.setBounds(0,0, ScreenResolution.getScreenWidth()-350, ScreenResolution.getScreenHeight());
         this.setLayout(null);
 
 

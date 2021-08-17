@@ -2,7 +2,7 @@ package Utility;
 
 import java.awt.*;
 
-public class Utility {
+public class ScreenResolution {
 
 //    Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 //    int width = (int) screenSize.getWidth();
